@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
 import { verifyToken } from '../../lib/jwt';
-import jwt from 'jsonwebtoken';
 import { UserData, ValidationRequest } from '../types';
 
 export const authorization = (

@@ -1,7 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
 import { prisma } from '../../lib/prisma';
-import { User } from '../types';
-import { hash } from 'bcrypt';
 
 const getAllUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
