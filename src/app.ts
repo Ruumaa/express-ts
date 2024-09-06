@@ -5,7 +5,7 @@ import { errorHandler } from './middleware/errorHandler';
 import { router } from './routes/routes';
 
 const app: Application = express();
-const PORT: number | string = 5000;
+const PORT: number | string = process.env.PORT || 5000;
 
 //middleware handle JSON request
 app.use(express.json());
