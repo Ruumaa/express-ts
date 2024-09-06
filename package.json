@@ -25,7 +25,7 @@
   },
 "scripts": {
   "dev": "nodemon --exec npx ts-node src/app.ts",
-  "start": "tsc && node build/app.js",
+  "start": "tsc && node src/app.js",
   "build": "prisma generate && tsc"
 },
 
