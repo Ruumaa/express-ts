@@ -23,11 +23,12 @@
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-    "dev": "nodemon --exec npx ts-node src/app.ts",
-    "start": "tsc && node build/app.js",
-    "build": "tsc"
-  },
+"scripts": {
+  "dev": "nodemon --exec npx ts-node src/app.ts",
+  "start": "tsc && node build/app.js",
+  "build": "prisma generate && tsc"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
