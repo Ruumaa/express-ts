@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.5",
     "@types/node": "^20.11.9",
@@ -23,12 +24,12 @@
   "directories": {
     "lib": "lib"
   },
-"scripts": {
-  "dev": "nodemon --exec npx ts-node src/app.ts",
-  "start": "tsc && node src/app.js",
-  "build": "prisma generate && tsc"
-},
-
+  "scripts": {
+    "dev": "nodemon --exec npx ts-node src/app.ts",
+    "start": "tsc && node src/app.js",
+    "build": "prisma generate && tsc",
+    "postinstall": "prisma generate"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
